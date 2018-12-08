@@ -4,7 +4,7 @@
     {
         public string GetCarLightInfo()
         {
-            return "Bu Marka Led Far Aydınlatması Kullanıyor.";
+            return "This brand uses led headlight";
         }
     }
 }

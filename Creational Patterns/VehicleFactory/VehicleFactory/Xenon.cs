@@ -4,7 +4,7 @@
     {
         public string GetCarLightInfo()
         {
-            return "Bu Marka Xenon Far Aydınlatması Kullanıyor.";
+            return "This Brand Uses Xenon Headlight";
         }
     }
 }

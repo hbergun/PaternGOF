@@ -4,7 +4,7 @@
     {
         public string GetEngineInfo()
         {
-            return "Bu Marka Benzinli Motor Kullanıyor";
+            return "this brand uses gasoline engine";
         }
     }
 }

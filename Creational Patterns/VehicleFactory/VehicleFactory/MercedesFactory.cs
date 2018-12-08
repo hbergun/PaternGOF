@@ -8,11 +8,11 @@ namespace VehicleFactory
 {
     public class MercedesFactory : IVehicleFactory
     {
-        public MercedesFactory(string comeMark)
+        public Car GetCar(int CarAge, decimal CarPrice)
         {
-            TradeMark = comeMark;
+            return new Mercedes(CarAge, CarPrice);
         }
-        public string TradeMark { get; set; }
+
         public ICarEngine GetCarEngine()
         {
             return new Gasoline();

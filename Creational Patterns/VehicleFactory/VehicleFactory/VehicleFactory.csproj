@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bmw.cs" />
     <Compile Include="BmwFactory.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Diesel.cs" />
     <Compile Include="FactoryCreator.cs" />
     <Compile Include="Gasoline.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="ICarLight.cs" />
     <Compile Include="IVehicleFactory.cs" />
     <Compile Include="Led.cs" />
+    <Compile Include="Mercedes.cs" />
     <Compile Include="MercedesFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

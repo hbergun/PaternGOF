@@ -10,5 +10,6 @@ namespace VehicleFactory
     {
         ICarEngine GetCarEngine(); //Her ArabaFabrikam Motor Ve Far Üretebilir.
         ICarLight GetCarLight();
+        Car GetCar(int CarAge,decimal CarPrice);
     }
 }

@@ -10,7 +10,7 @@ namespace VehicleFactory
     {
         public string GetEngineInfo()
         {
-            return "Bu Marka Diesel Motor Kullanıyor.";
+            return "this brand uses diesel engine";
         }
     }
 }
