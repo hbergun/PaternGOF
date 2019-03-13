@@ -8,8 +8,8 @@ namespace VehicleFactory
 {
     public interface IVehicleFactory
     {
-        ICarEngine GetCarEngine(); //Her ArabaFabrikam Motor Ve Far Üretebilir.
-        ICarLight GetCarLight();
+        ICarEngine GetCarEngine(); //Her Araba Fabrikam Motor Ve Far Üretebilir.
+        ICarLight GetCarLight(); //Each Car Factory Produces Motor And Light.
         Car GetCar(int CarAge,decimal CarPrice);
     }
 }

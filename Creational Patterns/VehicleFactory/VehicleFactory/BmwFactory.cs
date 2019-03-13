@@ -8,10 +8,6 @@ namespace VehicleFactory
 {
     public class BmwFactory : IVehicleFactory
     {
-        public BmwFactory()
-        {
-
-        }
         public Car GetCar(int CarAge,decimal CarPrice)
         {
             return new Bmw(CarAge,CarPrice);

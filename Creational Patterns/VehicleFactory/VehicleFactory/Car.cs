@@ -24,7 +24,6 @@ namespace VehicleFactory
             Blue
         }
 
-
         private enBrands carBrand;
         public virtual enBrands CarBrand
         {
