@@ -4,11 +4,11 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    public class ShieldAlloy : ITankShield
+    public class ShieldComposite : ITankShield
     {
         public string Defence()
         {
-            return "Alloy Shield Protected Tank";
+            return "Composite Shield Protected Tank";
         }
     }
 }
