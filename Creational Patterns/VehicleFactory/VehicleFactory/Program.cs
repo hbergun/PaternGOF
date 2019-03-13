@@ -11,6 +11,7 @@ namespace VehicleFactory
         static void Main(string[] args)
         {
             //Brand Case Form Free
+            //This Example Models a Factory Producing Car And Car Parts 
             Car MyCar  = ((IVehicleFactory)FactoryCreator.GetFactory("Bmw")).GetCar(1,175000);
             Console.WriteLine(MyCar.DoDrift());
             Console.WriteLine(MyCar.CarAge);
