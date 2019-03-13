@@ -4,7 +4,10 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    interface ITankFactory
+    public interface ITankFactory
     {
+        ITankGun GetTankGun();
+        ITankShield GetTankShield();
+        Tank GetTank();
     }
 }

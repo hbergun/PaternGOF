@@ -4,7 +4,8 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    class LeopardTank
+    public class LeopardTank : Tank
     {
+       
     }
 }

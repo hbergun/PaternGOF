@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    class AltayTank
+    class AbramsTankFactory
     {
     }
 }
