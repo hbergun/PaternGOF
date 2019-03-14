@@ -4,7 +4,11 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    class AltayTankFactory
+    public class AltayTankFactory : ITankFactory
     {
+        public Tank GetTank()
+        {
+            return new AltayTank();
+        }
     }
 }
