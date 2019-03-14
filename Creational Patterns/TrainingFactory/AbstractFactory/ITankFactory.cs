@@ -6,8 +6,6 @@ namespace AbstractFactory
 {
     public interface ITankFactory
     {
-        ITankGun GetTankGun();
-        ITankShield GetTankShield();
         Tank GetTank();
     }
 }

@@ -6,7 +6,9 @@ namespace AbstractFactory
 {
     public abstract class Tank
     {
-        public abstract ITankGun GetTankGun();
-        public abstract ITankShield GetTankShield();
+        public abstract ITankGun TankGun { get; }
+        public abstract ITankShield TankShield { get; }
+        public abstract void GetTankInfo();
     }
 }
+
