@@ -23,7 +23,7 @@ namespace AbstractFactory
 
         public override void GetTankInfo()
         {
-            Console.WriteLine("Leopard Uses Gun:"+TankGun+"Shield:"+TankShield);
+            Console.WriteLine("Leopard Uses Gun:" + TankGun + "Shield:" + TankShield);
         }
     }
 }
