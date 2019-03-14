@@ -4,7 +4,11 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    class AbramsTankFactory
+    public class AbramsTankFactory : ITankFactory
     {
+        public Tank GetTank()
+        {
+            return new AbramsTank();
+        }
     }
 }
