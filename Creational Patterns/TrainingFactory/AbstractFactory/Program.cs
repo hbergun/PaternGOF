@@ -6,7 +6,8 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tank NewTank = FactoryCreator.GetTankFactory("abrams").GetTank();
+            NewTank.GetTankInfo();
         }
     }
 }
