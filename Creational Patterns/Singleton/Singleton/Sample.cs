@@ -7,6 +7,7 @@ namespace Singleton
     public class Sample
     {
         private static Sample _sample;
+        private static readonly object lock_obj = new object();
         protected Sample() { }
         public static Sample CreateObject() //Classic
         {
@@ -31,9 +32,23 @@ namespace Singleton
             }
         }
 
+        //Thread Safe Singleton
+        public static Sample GetSampleThreadSafe
+        {
+            get
+            {
+                lock (lock_obj)
+                {
+                    return _sample ?? (_sample = new Sample());
+
+                }
+            }
+        }
+
         public void ShowMessage(string message)
         {
             Console.WriteLine(message);
         }
+
     }
 }

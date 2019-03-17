@@ -14,6 +14,8 @@ namespace Singleton
             Instance.ShowMessage("Version 2");
             Instance = Sample.GetSample; // Best Practice
             Instance.ShowMessage("Best Practice");
+            Instance = Sample.GetSampleThreadSafe; // Best Practice
+            Instance.ShowMessage("Thread Safe Singleton");
             Console.Read();
         }
     }
