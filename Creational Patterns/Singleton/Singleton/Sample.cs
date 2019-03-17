@@ -6,7 +6,8 @@ namespace Singleton
 {
     public class Sample
     {
-        private static Sample _sample;
+        //volatile Keyword prevents simultaneous change for different CPUs 
+        private static volatile Sample _sample; 
         private static readonly object lock_obj = new object();
         protected Sample() { }
         public static Sample CreateObject() //Classic
