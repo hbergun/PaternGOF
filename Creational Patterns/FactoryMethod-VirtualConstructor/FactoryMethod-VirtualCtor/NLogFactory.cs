@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactoryMethod_VirtualCtor
 {
-    public class LoggerFactory : ILoggerFactory
+    public class NLogFactory : ILoggerFactory
     {
         public ILogger GetLogger()
         {

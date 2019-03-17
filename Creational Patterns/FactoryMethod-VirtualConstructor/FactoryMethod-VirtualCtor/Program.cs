@@ -6,7 +6,12 @@ namespace FactoryMethod_VirtualCtor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductTest productTestNLog = new ProductTest(new NLogFactory());
+            productTestNLog.Save();
+            ProductTest productTestSerilog = new ProductTest(new SerilogFactory());
+            productTestSerilog.Save();
+            Console.Read();
+                
         }
     }
 }
