@@ -8,7 +8,7 @@ namespace AbstractFactory
     {
         public abstract ITankGun TankGun { get; } //Re Created With Interface !!
         public abstract ITankShield TankShield { get; }
-        public abstract void GetTankInfo();
+        public abstract string GetTankInfo();
     }
 }
 

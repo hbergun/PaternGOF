@@ -10,5 +10,15 @@ namespace AbstractFactory
         {
             return new AltayTank();
         }
+
+        public ITankGun GetTankGun()
+        {
+            return new Gun80MM();
+        }
+
+        public ITankShield GetTankShield()
+        {
+            return new ShieldSteel();
+        }
     }
 }

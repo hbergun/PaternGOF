@@ -10,5 +10,15 @@ namespace AbstractFactory
         {
             return new LeopardTank();
         }
+
+        public ITankGun GetTankGun()
+        {
+            return new Gun50MM();
+        }
+
+        public ITankShield GetTankShield()
+        {
+            return new ShieldComposite();
+        }
     }
 }

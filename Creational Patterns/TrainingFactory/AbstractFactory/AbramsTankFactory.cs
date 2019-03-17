@@ -10,5 +10,15 @@ namespace AbstractFactory
         {
             return new AbramsTank();
         }
+
+        public ITankGun GetTankGun()
+        {
+            return new Gun150MM();
+        }
+
+        public ITankShield GetTankShield()
+        {
+            return new ShieldCarbon();
+        }
     }
 }

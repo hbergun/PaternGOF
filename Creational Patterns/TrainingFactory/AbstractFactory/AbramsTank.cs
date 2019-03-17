@@ -22,9 +22,9 @@ namespace AbstractFactory
             }
         }
 
-        public override void GetTankInfo()
+        public override string GetTankInfo()
         {
-            Console.WriteLine("Abrams Tank Uses Gun:" + TankGun + "Shield:" + TankShield);
+            return "Abrams Tank Uses Gun:" + TankGun + "Shield:" + TankShield;
         }
     }
 }

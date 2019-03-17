@@ -6,8 +6,13 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Tank NewTank = FactoryCreator.GetTankFactory("abrams").GetTank();
-            NewTank.GetTankInfo();
+            Tank AbramsTankInstance = FactoryCreator.GetTankFactory("abrams").GetTank();
+            Console.WriteLine(AbramsTankInstance.GetTankInfo());
+            Tank LeopardTankInstance = FactoryCreator.GetTankFactory("leopard").GetTank();
+            Console.WriteLine(LeopardTankInstance.GetTankInfo());
+            Tank AltayTankInstance = FactoryCreator.GetTankFactory("altay").GetTank();
+            Console.WriteLine(AltayTankInstance.GetTankInfo());
+            Console.Read();
         }
     }
 }
