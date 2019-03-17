@@ -6,19 +6,19 @@ namespace AbstractFactory
 {
     public class AltayTank : Tank
     {
-        public override ITankGun TankGun
+        public override string TankGun
         {
             get
             {
-                return new Gun80MM();
+                return "Gun 80MM";
             }
         }
 
-        public override ITankShield TankShield
+        public override string TankShield
         {
             get
             {
-                return new ShieldSteel();
+                return "Shield Steel";
             }
         }
 
