@@ -6,7 +6,15 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Sample Instance;
+            Instance = Sample.CreateObject();
+            Instance.ShowMessage("Classic");
+            Instance = Sample.CreateObjectV2();
+            Instance.ShowMessage("Version 2");
+            Instance = Sample.GetSample; // Best Practice
+            Instance.ShowMessage("Best Practice");
+            Console.Read();
         }
     }
 }
