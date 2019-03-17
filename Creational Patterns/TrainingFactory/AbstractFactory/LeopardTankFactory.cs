@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AbstractFactory
 {
-    public class LeoparkTankFactory : ITankFactory
+    public class LeopardTankFactory : ITankFactory
     {
         public Tank GetTank()
         {
