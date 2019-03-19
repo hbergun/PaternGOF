@@ -4,7 +4,12 @@ using System.Text;
 
 namespace CarBuilder
 {
-    class CarDirector
+    public class CarDirector
     {
+        public CarDirector(CarBuilder carBuilder)
+        {
+            carBuilder.EngineMontage();
+            carBuilder.WheelMontage();  
+        }
     }
 }

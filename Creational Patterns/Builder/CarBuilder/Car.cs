@@ -12,7 +12,7 @@ namespace CarBuilder
 
         public override string ToString()
         {
-            return $"Brand:{Brand},Engine:{Engine},Wheel{Wheel}";
+            return $"Brand:{Brand},Engine:{Engine},Wheel:{Wheel}";
         }
     }
 }
