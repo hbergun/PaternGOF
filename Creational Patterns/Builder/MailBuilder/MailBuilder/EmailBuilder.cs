@@ -4,17 +4,15 @@ using System.Text;
 
 namespace MailBuilder
 {
-    public abstract class EmailBuilder
+    public class EmailBuilder
     {
-        protected EmailAccount _emailAccount;
-        public EmailAccount GetEmailAccount
-        {
-            get
-            {
-                return _emailAccount;
-            }
-        }
-        public abstract string SetServiceProvider();
-        public abstract string SetMailExtension();
+        private  string firstName { get; set; }
+        private string surname;
+        private int age;
+        private string phone;
+        private string address;
+
+
+
     }
 }

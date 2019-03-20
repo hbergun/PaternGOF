@@ -4,14 +4,23 @@ using System.Text;
 
 namespace MailBuilder
 {
-    public abstract class EmailAccount
+    public class EmailAccount
     {
-        public string ServiceProvider { get; set; }
-        public string MailExtension { get; set; }
+        private string _ServiceProvider { get; set; }
+        private string _MailExtension { get; set; }
+        private string _MailOwner { get; set; }
+
+        public EmailAccount(EmailBuilder emailBuilder)
+        {
+            _ServiceProvider = emailBuilder
+            _MailExtension = MailExtension;
+            _MailOwner = MailOwner;
+
+        }
 
         public override string ToString()
         {
-            return $"Service Provider:{ServiceProvider},Mail Extension:{MailExtension}";
+            return $"Service Provider:{_ServiceProvider},Mail Extension:{_MailExtension}";
             //return base.ToString();
         }
     }
