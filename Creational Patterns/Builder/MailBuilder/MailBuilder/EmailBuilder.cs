@@ -6,13 +6,31 @@ namespace MailBuilder
 {
     public class EmailBuilder
     {
-        private  string firstName { get; set; }
-        private string surname;
-        private int age;
-        private string phone;
-        private string address;
+        private string _ServiceProvider;
+        private string _MailExtension;
+        private string _MailOwner;
 
+        public EmailBuilder SetServiceProvider(string ServiceProvider)
+        {
+            _ServiceProvider = ServiceProvider;
+            return this;
+        }
 
+        public EmailBuilder SetMailExtension(string Extension)
+        {
+            _MailExtension = Extension;
+            return this;
+        }
 
+        public EmailBuilder SetMailOwner(string Name)
+        {
+            _MailOwner = Name;
+            return this;
+        }
+
+        public EmailAccount Build()
+        {
+            return new EmailAccount(_ServiceProvider,_MailExtension,_MailOwner);
+        }
     }
 }
