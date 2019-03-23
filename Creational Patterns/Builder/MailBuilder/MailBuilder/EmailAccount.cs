@@ -20,7 +20,7 @@ namespace MailBuilder
 
         public override string ToString()
         {
-            return $"Service Provider:{_ServiceProvider},Mail Extension:{_MailExtension}";
+            return $"Service Provider:{_ServiceProvider},Mail Extension:{_MailExtension},Mail Owner:{_MailOwner}";
             //return base.ToString();
         }
     }

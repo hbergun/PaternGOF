@@ -14,6 +14,12 @@ namespace MailBuilder
                 .SetMailOwner("hbergun")
                 .Build();
             Console.WriteLine(mail.ToString());
+            EmailAccount mail2 =
+                emailBuilder
+                .SetMailOwner("mreorhan")
+                .Build();
+
+            Console.WriteLine(mail2.ToString());
             Console.Read();
         }
     }
