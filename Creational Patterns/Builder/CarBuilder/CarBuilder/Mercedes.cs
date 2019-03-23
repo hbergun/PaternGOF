@@ -18,7 +18,7 @@ namespace CarBuilder
 
         public override void WheelMontage()
         {
-            _car.Engine = "Continental Premium Contact 5";
+            _car.Wheel = "Continental Premium Contact 5";
         }
     }
 }
