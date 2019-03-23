@@ -7,9 +7,8 @@ namespace GameBuilder
     public abstract class GameBuilder<TGame,TBuilder> where TGame : Game
                                              where TBuilder : GameBuilder<TGame,TBuilder>
     {
-        protected string _season = "Winter"; //Defualt
-        protected string _country  = "Turkey";
-
+        protected string _season = "Winter"; //Default
+        protected string _country  = "Turkey"; //Default
         protected abstract TBuilder BuilderInstance { get; }
 
         public TBuilder Season(string season)
@@ -23,6 +22,7 @@ namespace GameBuilder
             _country = country;
             return BuilderInstance; //Fluent Design Pattern
         }
+
         public abstract TGame Build();
     }
 }

@@ -6,7 +6,7 @@ namespace GameBuilder
 {
     public class LocalGameBuilder : GameBuilder<LocalGame, LocalGameBuilder>
     {
-        private int _difficulty = 3;
+        private int _difficulty = 3; //Default
         protected override LocalGameBuilder BuilderInstance => this;
 
         public LocalGameBuilder Difficulty(int difficulty)
