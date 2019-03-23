@@ -1,13 +1,13 @@
 ﻿namespace GameBuilder
 {
-    class LocalGame : Game
+    public class LocalGame : Game
     {
-        public LocalGame(int aiStrength, string season, string country)
+        public LocalGame(int difficulty, string season, string country)
             : base(season, country)
         {
-            AiStrength = aiStrength;
+            Difficulty = difficulty;
         }
 
-        public int AiStrength { get; }
+        public int Difficulty { get; }
     }
 }
