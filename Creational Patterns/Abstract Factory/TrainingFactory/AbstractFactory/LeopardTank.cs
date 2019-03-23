@@ -10,7 +10,7 @@ namespace AbstractFactory
         {
             get
             {
-                return "Gun 150MM";
+                return "Gun 50MM";
             }
         }
         public override string TankShield

@@ -10,7 +10,7 @@ namespace AbstractFactory
         {
             get
             {
-                return "Gun 50MM";
+                return "Gun 150MM";
             }
         }
 
