@@ -4,7 +4,25 @@ using System.Text;
 
 namespace GameBuilder
 {
-    class GameBuilder
+    public abstract class GameBuilder<TGame,TBuilder> where TGame : Game
+                                             where TBuilder : GameBuilder<TGame,TBuilder>
     {
+        protected string _season = "Winter"; //Defualt
+        protected string _country  = "Turkey";
+
+        protected abstract TBuilder BuilderInstance { get; }
+
+        public TBuilder Season(string season)
+        {
+            _season = season;
+            return BuilderInstance; //Fluent Design Pattern
+        }
+
+        public TBuilder Country(string country)
+        {
+            _country = country;
+            return BuilderInstance; //Fluent Design Pattern
+        }
+        public abstract TGame Build();
     }
 }

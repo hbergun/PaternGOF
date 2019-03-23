@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameBuilder
 {
-    class LocalGameBuilder
+    class Class1
     {
     }
 }
