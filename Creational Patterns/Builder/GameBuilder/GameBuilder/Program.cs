@@ -8,9 +8,15 @@ namespace GameBuilder
         {
             OnlineGameBuilder onlineGame = new OnlineGameBuilder();
             onlineGame
-                .Country("Mexica")
+                .Country("South Korea")
+                .Season("Winter")
+                .ServerUrl("www.mmopgame.com") //Difference Between  Online Game and Local Game
+                .Build();
+            LocalGameBuilder localGame = new LocalGameBuilder();
+            localGame
+                .Country("Turkey")
                 .Season("Summer")
-                .ServerUrl("www.berksgame.com")
+                .Difficulty(7)
                 .Build();
             Console.Read();
         }
