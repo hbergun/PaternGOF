@@ -13,7 +13,8 @@ namespace BuildYourOwnCar
             _optionalParts = new List<string>();
         }
         protected List<string> _stockParts;
-        protected List<string> _optionalParts;
+        private List<string> _optionalParts;
+        protected string model;
 
         public List<string> OptionalParts
         {
