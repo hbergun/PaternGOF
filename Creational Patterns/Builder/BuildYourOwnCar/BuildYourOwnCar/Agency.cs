@@ -4,7 +4,8 @@ using System.Text;
 
 namespace BuildYourOwnCar
 {
-    class Agency
+    public class Agency
     {
+        public string AgencyName { get; set; }
     }
 }
